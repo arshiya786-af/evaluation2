@@ -35,7 +35,7 @@ public class Demo{
 			System.out.println("roll number--"+ar.getRoll());
 			System.out.println("marks--"+ar.getMarks());
 			System.out.println("address--"+ar.getAddress());
-			sum+=ss.getMarks();
+			sum+=ar.getMarks();
 			
 		}
 		
