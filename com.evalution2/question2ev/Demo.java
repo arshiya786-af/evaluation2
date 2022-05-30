@@ -2,43 +2,45 @@
 package question2ev;
 import java.util.Scanner;
 
-public class Demo extends Student{
-	public static void main (String[]args) {
+public class Demo{
+	
+	public static void main(String[] args) {
 		
-		Student stu=new Student();
-		System.out.println("Enter Number of Students: ");
-		Scanner scan=new Scanner(System.in);
-		int n=scan.nextInt();
-		System.out.println("Enter roll");
-		Scanner roll=new Scanner(System.in);
-		String rol=roll.nextLine();
-		System.out.println("Enter Name");
-		Scanner name=new Scanner(System.in);
-		String nam=roll.nextLine();
-		System.out.println("Enter Address");
-		Scanner Adress=new Scanner(System.in);
-		String address=Adress.nextLine();
-		System.out.println("Enter marks");
-		Scanner Mark=new Scanner(System.in);
-		int marks=Mark.nextInt();
-		System.out.println("Roll:"+roll);
-		System.out.println("name:"+name);
-		System.out.println("Address:"+address);
-		System.out.println("Marks:"+marks);
+		Scanner s= new Scanner(System.in);
+		System.out.println("Enter number of student:");
+		int n=s.nextInt();
 		
-		
-		
-		int[] a=new int[n];
-		double Average=0;
-		for()
-		
-		
-		
+		Student[] arr= new Student[n];
+		int sum=0;
+		for(int i=0; i<n;i++) {
+			s.nextLine();
+			System.out.println("Enter Address:");
+			String add=s.nextLine();
+			
+			System.out.println("Enter roll:");
+			int roll1=s.nextInt();
+			System.out.println("Enter marks:");
+			int marks1=s.nextInt();
+			s.nextLine();
+			System.out.println("Enter name:");
+			String name1=s.next();
+			
+			Student ar= new Student();
+			ar.setAddress(add);
+			ar.setMarks(marks1);
+			ar.setName(name1);
+			ar.setRoll(roll1);
+			arr[i]=ar;
+			System.out.println("Name--"+ar.getName());
+			System.out.println("roll number--"+ar.getRoll());
+			System.out.println("marks--"+ar.getMarks());
+			System.out.println("address--"+ar.getAddress());
+			sum+=ss.getMarks();
+			
 		}
+		
+		int average= sum/n;
+		System.out.println("average---"+average);
+		
 	}
-	
-
-
-	
-
 }
