@@ -1,7 +1,10 @@
 package question3;
 
-public class HatchBack {
-
+class HatchBack extends Car{
+	
 	final int farePerKm =15;
-
+	int a;
+	HatchBack(){
+		this.a=super.getNumberOfKms();
+	}
 }
