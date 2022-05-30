@@ -1,28 +1,28 @@
 package question3;
 
-public class Ola {
-
-	public Car bookCar(int numberOfPassenger, int numberOfKMs)
-	{
-		if(numberOfPassenger<=3)
-		{
-			
-			Sedan S=new Sedan();
-			return S;
+class OLA{
+	
+	public Car bookCar(int numberOfPassenger, int numberOfKMs) {
+		
+		if(numberOfPassenger<=3) {
+			return new HatchBack();
 		}
-		else {
-			HatchBack carr=new HatchBack();
-			return car;
-					
-		}
+		
+		return new Sedan();
 	}
-
-	public int calculateBill(Car car)
-	{ double sum=1;
-		if(Car =="Sedan")
-		{
-			sum=sum+car+28;
-		}
+	
+	public void calculateBill(Car car) {
+		
+		
+		HatchBack h= (HatchBack)car;
+		Car ccCar= (Car)h;
+		System.out.println(ccCar.getNumberOfKms()+"dfdfff");
+		
+		System.out.println(h.farePerKm);
+//		
+//		int total=h.getNumberOfKms()* h.farePerKm;
+//		System.out.println(total);
+		//return total;
+		//Total fare=numberOfKms*farePerKm
 	}
-
 }
