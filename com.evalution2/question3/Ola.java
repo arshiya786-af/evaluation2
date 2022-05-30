@@ -19,10 +19,5 @@ class OLA{
 		System.out.println(ccCar.getNumberOfKms()+"dfdfff");
 		
 		System.out.println(h.farePerKm);
-//		
-//		int total=h.getNumberOfKms()* h.farePerKm;
-//		System.out.println(total);
-		//return total;
-		//Total fare=numberOfKms*farePerKm
 	}
 }
