@@ -1,20 +1,43 @@
 package question2ev;
 
 public class Student {
-int roll;
-String name;
-String address;
-int marks;
-Student(){
-	int num;
-	double Average;
+	private int roll;
+	private int marks;
+	private String name;
+	private String address;
+	
+	
+	Student() {
+	}
+	public int getRoll() {
+		return roll;
+	}
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+	public int getMarks() {
+		return marks;
+	}
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	
+	
+	
+	
+
 	
 }
- void displayDetails(int roll) {
-	System.out.println("Roll:"+roll);
-	System.out.println("name:"+name);
-	System.out.println("Address:"+address);
-	System.out.println("Marks:"+marks);
- }}
-
 
